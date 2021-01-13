@@ -29,7 +29,7 @@
                 ]);
             ?>
             <a href="tel:<?= get_field('phone_number_link', 'options'); ?>" class="phone header__phone">
-                <?= get_field('phone_number', 'options'); ?>
+                <span class="header__phone-tel"><?= get_field('phone_number', 'options'); ?></span>
             </a>
             <button class="btn-mobile-menu" type="button">
                 <span class="sr-only">Открыть/закрыть меню</span>
