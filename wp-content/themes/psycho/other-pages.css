@@ -1,0 +1,40 @@
+.header__container {
+    width: 970px;
+    height: 100%;
+    border-left: 0.0625em solid #000;
+    border-right: 0.0625em solid #000;
+    margin: 0 auto;
+}
+
+.header__container:before,
+.header__container:after {
+    content: '';
+    width: 47px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url("images/shadow.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: 9;
+}
+
+.header__container:before {
+    left: calc(50% - 209px);
+    transform: scale(-1);
+}
+
+.header__container:after {
+    right: calc(50% - 209px);
+}
+
+.header__text {
+    position: absolute;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
