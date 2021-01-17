@@ -17,14 +17,6 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `psycho`
---
-CREATE DATABASE IF NOT EXISTS `psycho` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `psycho`;
-
--- --------------------------------------------------------
-
---
 -- Структура таблицы `wp_commentmeta`
 --
 
