@@ -36,7 +36,7 @@
 					</tbody>
 				</table>
 			</div>
-			<a class="services__download-price" href="/wp-content/uploads/2020/12/inna-sotnikova-price.pdf" target="_blank">Скачать прайс-лист</a>
+			<a class="btn services__download-price" href="/wp-content/uploads/2020/12/inna-sotnikova-price.pdf" target="_blank">Скачать прайс-лист</a>
 		</div>
 	</section>
 </div>

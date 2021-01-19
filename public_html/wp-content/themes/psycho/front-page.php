@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="section intro">
 	<div class="intro__video-wrapper">
-		<video class="intro__video" preload="auto" autoplay="autoplay" loop="loop" poster="<?= get_template_directory_uri() ?>/images/main-bg.jpg" muted="muted">
+		<video class="intro__video" preload="auto" autoplay="autoplay" loop="loop" muted="muted">
 			<source src="<?= get_template_directory_uri() ?>/video/main-bg.mp4" type="video/mp4"></source>
 			<source src="<?= get_template_directory_uri() ?>/video/main-bg.webm" type="video/webm"></source>
 		</video>
@@ -11,7 +11,7 @@
 			Экстренная <span class="main-title__small">психологическая помощь</span>
 		</h1>
 		<p class="intro__price wow fadeInLeft">онлайн <br class="desktop-hide">от 1000 ₽/час</p>
-		<a href="#consultation" class="consultation-link intro__consultation-link wow fadeInLeft">
+		<a href="#consultation" class="btn consultation-link intro__consultation-link wow fadeInLeft">
 			Запись на консультацию
 		</a>
 	</div>
@@ -30,7 +30,7 @@
 			<p class="start__text">
 				Ее авторские методики и уникальный подход к каждому клиенту, позволяют в короткие сроки внести позитивные, значимые, и, что крайне не маловажно, стойкие изменения в Вашу жизнь.
 			</p>
-			<a href="#consultation" class="consultation-link start__consultation-link wow fadeInLeft">
+			<a href="#consultation" class="btn consultation-link start__consultation-link wow fadeInLeft">
 				Обратиться к психологу
 			</a>
 		</div>
@@ -39,7 +39,8 @@
 			<img class="start__image" 
 					src="<?= get_template_directory_uri() ?>/images/photo-1.jpg" 
 					srcset="<?= get_template_directory_uri() ?>/images/photo-1@2x.jpg 2x" 
-					alt="Инна Сотникова - психологическая помощь">
+					alt="Инна Сотникова - психологическая помощь"
+					loading="lazy">
 		</picture>
 	</div>
 </section>
@@ -119,40 +120,40 @@
 			самопомощи.
 		</p>
 		<div class="online__bottom">
-			<a href="#consultation" class="consultation-link online__consultation-link">Запись на консультацию</a>
+			<a href="#consultation" class="btn consultation-link online__consultation-link">Запись на консультацию</a>
 			<ul class="socials-list online__socials-list">
 				<li class="socials-list__item">
 					<a href="#" class="socials-list__link" target="_blank" rel="nofollow" title="Ссылка на группу ВКонтакте">
 						<object type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/vk.svg">
-							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/vk.png" alt="ВКонтакте">
+							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/vk.png" alt="ВКонтакте" loading="lazy">
 						</object>
 					</a>
 				</li>
 				<li class="socials-list__item">
 					<a href="#" class="socials-list__link" target="_blank" rel="nofollow" title="Ссылка на Instagram">
 						<object type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/instagram.svg">
-							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/instagram.png" alt="Instagram">
+							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/instagram.png" alt="Instagram" loading="lazy">
 						</object>
 					</a>
 				</li>
 				<li class="socials-list__item">
 					<a href="#" class="socials-list__link" target="_blank" rel="nofollow" title="Ссылка на Viber">
 						<object type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/viber.svg">
-							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/viber.png" alt="Viber">
+							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/viber.png" alt="Viber" loading="lazy">
 						</object>
 					</a>
 				</li>
 				<li class="socials-list__item">
 					<a href="#" class="socials-list__link" target="_blank" rel="nofollow" title="Ссылка на Whatsapp">
 						<object type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/whatsapp.svg">
-							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/whatsapp.png" alt="Whatsapp">
+							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/whatsapp.png" alt="Whatsapp" loading="lazy">
 						</object>
 					</a>
 				</li>
 				<li class="socials-list__item">
 					<a href="#" class="socials-list__link" target="_blank" rel="nofollow" title="Ссылка на Telegram">
 						<object type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/telegram.svg">
-							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/telegram.png" alt="Telegram">
+							<img class="socials-list__image" src="<?= get_template_directory_uri() ?>/images/telegram.png" alt="Telegram" loading="lazy">
 						</object>
 					</a>
 				</li>
@@ -168,7 +169,8 @@
 				<img class="about__image" 
 					 src="<?= get_template_directory_uri() ?>/images/real@1x.jpg" 
 					 srcset="<?= get_template_directory_uri() ?>/images/real@2x.jpg 2x" 
-					 alt="Реалистичные сроки и быстрое достижение стойких качественных результатов">
+					 alt="Реалистичные сроки и быстрое достижение стойких качественных результатов"
+					 loading="lazy">
 			</picture> 
 			<div class="about__content">
 				<p class="about__title">
@@ -196,7 +198,8 @@
 				<img class="about__image" 
 					 src="<?= get_template_directory_uri() ?>/images/selfhelp@1x.jpg" 
 					 srcset="<?= get_template_directory_uri() ?>/images/selfhelp@2x.jpg 2x" 
-					 alt="Навыки психологической самопомощи">
+					 alt="Навыки психологической самопомощи"
+					 loading="lazy">
 			</picture> 
 		</div>
 	</div>
@@ -240,31 +243,31 @@
 		<ul class="advantages__list">
 			<li class="advantages__item wow fadeIn" data-wow-delay="0s">
 				<object class="advantages__icon" type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/discount.svg">
-					<img src="<?= get_template_directory_uri() ?>/images/discount.png" alt="Скидки и акции">
+					<img src="<?= get_template_directory_uri() ?>/images/discount.png" alt="Скидки и акции" loading="lazy">
 				</object>
 				<h3 class="advantages__item-title">Скидки и акции</h3>
 			</li>
 			<li class="advantages__item wow fadeIn" data-wow-delay="0.25s">
 				<object class="advantages__icon" type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/cash.svg">
-					<img src="<?= get_template_directory_uri() ?>/images/cash.png" alt="Рассрочка и льготы">
+					<img src="<?= get_template_directory_uri() ?>/images/cash.png" alt="Рассрочка и льготы" loading="lazy">
 				</object>
 				<h3 class="advantages__item-title">Рассрочка и льготы</h3>
 			</li>
 			<li class="advantages__item wow fadeIn" data-wow-delay="0.5s">
 				<object class="advantages__icon" type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/books.svg">
-					<img src="<?= get_template_directory_uri() ?>/images/books.png" alt="Бесплатные материалы">
+					<img src="<?= get_template_directory_uri() ?>/images/books.png" alt="Бесплатные материалы" loading="lazy">
 				</object>
 				<h3 class="advantages__item-title">Бесплатные материалы</h3>
 			</li>
 			<li class="advantages__item wow fadeIn" data-wow-delay="0.75s">
 				<object class="advantages__icon" type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/interview.svg">
-					<img src="<?= get_template_directory_uri() ?>/images/interview.png" alt="Консультации">
+					<img src="<?= get_template_directory_uri() ?>/images/interview.png" alt="Консультации" loading="lazy">
 				</object>
 				<h3 class="advantages__item-title">Онлайн-консультации</h3>
 			</li>
 			<li class="advantages__item wow fadeIn" data-wow-delay="1s">
 				<object class="advantages__icon" type="image/svg+xml" data="<?= get_template_directory_uri() ?>/svg/teacher.svg">
-					<img src="<?= get_template_directory_uri() ?>/images/teacher.png" alt="Программы-тренинги">
+					<img src="<?= get_template_directory_uri() ?>/images/teacher.png" alt="Программы-тренинги" loading="lazy">
 				</object>
 				<h3 class="advantages__item-title">Онлайн программы-тренинги</h3>
 			</li>

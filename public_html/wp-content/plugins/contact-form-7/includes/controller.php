@@ -16,7 +16,8 @@ function wpcf7_control_init() {
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'wpcf7_do_enqueue_scripts', 10, 0 );
+// add_action( 'wp_enqueue_scripts', 'wpcf7_do_enqueue_scripts', 10, 0 );
+add_action( 'get_footer', 'wpcf7_do_enqueue_scripts', 10, 0 );
 
 function wpcf7_do_enqueue_scripts() {
 	if ( wpcf7_load_js() ) {

@@ -1,5 +1,10 @@
 $(function() {
-    var bodyHtml = $('body, html');
+    let bodyHtml = $('body, html');
+    let loader = $('.loader');
+
+    setTimeout(function() {
+        loader.hide();
+    }, 1000);
 
     $('.btn-mobile-menu').on('click', function() {
         $('.header__menu').toggleClass('header__menu--active');

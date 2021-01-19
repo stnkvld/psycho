@@ -13,10 +13,9 @@ function enqueue_styles() {
 		wp_enqueue_style('psycho-services', get_template_directory_uri() . '/css/services.min.css', '', true);
 	}
 }
-add_action('wp_enqueue_scripts', 'enqueue_styles');
+add_action('get_footer', 'enqueue_styles');
 
 function enqueue_scripts() {
-	wp_deregister_script('jquery');
 	wp_enqueue_script('psycho-custom', get_template_directory_uri() . '/js/custom.min.js', array(), '', true);
 	if (is_front_page()) {
 		wp_enqueue_script('psycho-main', get_template_directory_uri().'/js/main.min.js', array(), '', true);

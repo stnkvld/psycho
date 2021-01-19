@@ -54,7 +54,7 @@
 
 .tabs__input:checked+.tabs__label {
     color: #fff;
-    background-color: #007bc0;
+    background-color: #f69917;
 }
 
 .gallery {

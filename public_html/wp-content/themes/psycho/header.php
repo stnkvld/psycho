@@ -5,7 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="MWPEnYS1ija4V8sdCeSEuxfWaEjXPy-PDkCqEevbn3s" />
+	<!-- <meta name="yandex-verification" content="0ea67eab6fc349f4" /> -->
 	<title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	<link rel="preconnect" href="https://yastatic.net">
+	<link rel="preconnect" href="https://mc.yandex.ru">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/css/preload.min.css" as="style">
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/fonts/Montserrat/Montserrat-Medium.ttf" type="font/ttf" as="font" crossorigin>
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/fonts/Montserrat/Montserrat-Bold.ttf" type="font/ttf" as="font" crossorigin>
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/fonts/Montserrat/Montserrat-Regular.ttf" type="font/ttf" as="font" crossorigin>
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/fonts/Montserrat/Montserrat-SemiBold.ttf" type="font/ttf" as="font" crossorigin>
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/preload.min.css">
+    <?php wp_deregister_script('jquery'); ?>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

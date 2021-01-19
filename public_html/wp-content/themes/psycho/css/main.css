@@ -147,6 +147,11 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform .3s ease-in-out;
+}
+
+.directions-list__link:hover:before {
+    transform: scale(1.2);
 }
 
 .svg .directions-list__link--worry:before {
@@ -302,22 +307,15 @@
 }
 
 .consultation-link {
-    position: relative;
     font-size: 1.125rem;
     font-weight: 500;
-    color: #333;
     text-decoration: none;
-    background-color: hsl(35, 93%, 60%);
-    border-radius: 1.25em;
-    padding: .5em 4em .5em 1.5em;
-    box-shadow: 0 .15em .55em rgba(0, 53, 134, .2);
-    transition: background-color 0.3s ease-in-out;
 }
 
 .intro__consultation-link {
     font-size: 1.25rem;
     font-weight: 600;
-    padding: .65em 4em .65em 1.75em;
+    padding: .8em 4em .8em 1.5em;
 }
 
 .consultation-link:after {
@@ -335,13 +333,8 @@
     animation-fill-mode: both;
 }
 
-.consultation-link:hover {
-    background-color: hsl(35, 93%, 50%);
-    transition: background-color 0.3s ease-in-out;
-}
-
 .about {
-    background-color: #007bc0;
+    background-color: #333;
 }
 
 .about__element {
@@ -382,7 +375,12 @@
 
 .card {
     font-size: 1.125rem;
-    box-shadow: 0px 0px 24px 0px rgba(141, 146, 184, .2);
+    box-shadow: 0 0 24px 0 rgba(141, 146, 184, .2);
+    transition: box-shadow .3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 24px 0 rgba(141, 146, 184, .4);
 }
 
 .card__title {
@@ -584,7 +582,7 @@
         margin: 0 auto 1.5em;
     }
     .intro__consultation-link {
-        width: 33rem;
+        width: 30rem;
     }
     .socials-list {
         justify-content: center;
