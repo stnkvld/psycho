@@ -35,6 +35,8 @@
 			</a>
 		</div>
 		<picture class="start__picture wow fadeInRight">
+			<source media="(max-width: 767px)" srcset="<?= get_template_directory_uri() ?>/images/mobile/photo-1.webp, <?= get_template_directory_uri() ?>/images/mobile/photo-1@2x.webp 2x" type="image/webp">
+			<source media="(max-width: 767px)" srcset="<?= get_template_directory_uri() ?>/images/mobile/photo-1.jpg, <?= get_template_directory_uri() ?>/images/mobile/photo-1@2x.jpg 2x" type="image/png">
 			<source srcset="<?= get_template_directory_uri() ?>/images/photo-1.webp, <?= get_template_directory_uri() ?>/images/photo-1@2x.webp 2x">
 			<img class="start__image" 
 					src="<?= get_template_directory_uri() ?>/images/photo-1.jpg" 
